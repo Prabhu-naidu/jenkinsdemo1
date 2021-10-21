@@ -1,0 +1,31 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('dev') {
+            steps {
+                echo 'devlop'
+            }
+        }
+    
+    
+        stage('test') {
+            steps {
+                echo 'testing'
+            }
+        }
+    
+        stage('pro') {
+            steps {
+                echo 'production'
+            }
+        }
+    
+    
+        stage('rele') {
+            steps {
+                echo 'release'
+            }
+        }
+    }
+}
